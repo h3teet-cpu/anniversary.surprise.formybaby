@@ -56,5 +56,36 @@
         "You are my favorite person forever and I can't wait to spend the rest of my life with you honey 💖";
     }
   </script>
+  <script>
+  function makeHeart() {
+    const heart = document.createElement("div");
+    heart.innerHTML = "💗";
+    heart.style.position = "fixed";
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.bottom = "-30px";
+    heart.style.fontSize = Math.random() * 20 + 15 + "px";
+    heart.style.animation = "floatUp 5s linear";
+    document.body.appendChild(heart);
+
+    setTimeout(() => {
+      heart.remove();
+    }, 5000);
+  }
+
+  setInterval(makeHeart, 400);
+</script>
+
+<style>
+  @keyframes floatUp {
+    from {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    to {
+      transform: translateY(-110vh);
+      opacity: 0;
+    }
+  }
+</style>
 </body>
 </html>
