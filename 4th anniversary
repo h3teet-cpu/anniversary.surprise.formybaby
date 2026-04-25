@@ -1,0 +1,60 @@
+  <!DOCTYPE html>
+<html>
+<head>
+  <title>Happy Anniversary</title>
+  <style>
+    body {
+      background: pink;
+      font-family: Arial;
+      text-align: center;
+      padding: 40px;
+    }
+
+    .box {
+      background: white;
+      border-radius: 25px;
+      padding: 25px;
+      max-width: 400px;
+      margin: auto;
+    }
+
+    img {
+      width: 250px;
+      border-radius: 20px;
+    }
+
+    button {
+      background: hotpink;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 20px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <h1>Happy Anniversary 💗</h1>
+
+    <p>To my love,</p>
+
+    <p>
+      Happy 4 years baby! I made this little website just for you. Thank you for being in my life.
+      I love you so much 💕
+    </p>
+
+    <button onclick="showMessage()">Click me</button>
+
+    <p id="secret"></p>
+  </div>
+
+  <script>
+    function showMessage() {
+      document.getElementById("secret").innerHTML =
+        "You are my favorite person forever and I can't wait to spend the rest of my life with you honey 💖";
+    }
+  </script>
+</body>
+</html>
